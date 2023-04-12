@@ -33,18 +33,18 @@ try{
   ps.setString(12,country);
   int x = ps.executeUpdate();
   if(x > 0){
-    out.println("First name : "+fname);
-    out.println("Last name : "+lname);
-    out.println("Email ID : "+email);
-    out.println("Phone no : "+phone);
-    out.println("Date Of Birth : "+dob);
-    out.println("Gender : "+gender);
-    out.println("Address1 : "+address1);
-    out.println("Address2 : "+address2);
-    out.println("City : "+city);
-    out.println("State : "+state);
-    out.println("Zip Code : "+zip);
-    out.println("Country : "+country);
+    out.println("FIRST NAME : "+fname);
+    out.println("LAST NAME : "+lname);
+    out.println("EMAIL ID : "+email);
+    out.println("PHONE NO : "+phone);
+    out.println("DATE OF BIRTH : "+dob);
+    out.println("GENDER : "+gender);
+    out.println("ADDRESS1 : "+address1);
+    out.println("ADDRESS2 : "+address2);
+    out.println("CITY : "+city);
+    out.println("STATE : "+state);
+    out.println("ZIP CODE : "+zip);
+    out.println("COUNTRY : "+country);
   }else{
     out.println("Registration Failed...");
   }
