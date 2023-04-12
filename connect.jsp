@@ -17,7 +17,7 @@ String country = request.getParameter("country");
 
 try{
   Class.forName("com.mysql.jdbc.Driver");
-  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:80/student?user=root&password=password")
+  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/student?user=root&password=password")
   PreparedStatement ps = conn.prepareStatement("insert into studentreg(firstname,lastname,email,phone,dob,gender,address1,address2,city,state,zip,country) values(?,?,?,?,?,?,?,?,?,?,?,?);");
   ps.setString(1,fname);
   ps.setString(2,lname);
