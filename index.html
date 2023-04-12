@@ -5,48 +5,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>student registeration</title>
+  <style>
+    
+    body{
+      background-color: rgba(19, 35, 47, 0.9);
+    }
+    h1{
+      color: rgb(211, 206, 206);
+    }
+    label{
+      color: rgb(217, 210, 210);
+      display: inline-block;
+      width: 300px;
+    }
+    input{
+      background-color: rgb(255, 255, 255);
+      height: 35px;
+      width: 400px;
+      border-radius: 5px;
+
+    }
+    button{
+      height: 55px;
+      width: 700px;
+      background-color: rgba(55, 214, 190, 0.619);
+      color: rgb(255, 255, 255);
+      font-family: serif;
+      font-size: 30px;
+      align-items: center;
+      border-radius: 20px;
+      border-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+  </style>
 </head>
-<body style="background-color: grey;">
+<body>
+  <div></div>
   <h1 style="font-size: 50px;text-align: center;">STUDENT REGISTRATION FORM</h1>
+
+  
   <form action="connect.jsp" method="post" style="text-align:center;">
-    <label style="font-size: 30px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="fname" type="text" placeholder="First name" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label id="fn" style="font-size: 30px;">First Name </label>
+    <input name="fname" type="text" placeholder="First name" >
     <br/><br/>
-    <label style="font-size: 30px;">Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="lname" type="text" placeholder="Last name" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label id="ln" style="font-size: 30px;">Last Name </label>
+    <input name="lname" type="text" placeholder="Last name" >
     <br/><br/>
-    <label style="font-size: 30px;">Email ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="email" type="email" placeholder="Email ID" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Email ID </label>
+    <input name="email" type="email" placeholder="Email ID" >
     <br/><br/>
-    <label style="font-size: 30px;">Phone Number &nbsp;&nbsp;</label>
-    <input name="phone" type="number" placeholder="Phone number" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Phone Number </label>
+    <input name="phone" type="number" placeholder="Phone number" >
     <br/><br/>
-    <label style="font-size: 30px;">Date of Birth ;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="dob" type="date" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Date of Birth </label>
+    <input name="dob" type="date" placeholder="Date of Birth">
     <br/><br/>
-    <label style="font-size: 30px;">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="gender" type="text" placeholder="male or female" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Gender </label>
+    <input name="gender" type="text" placeholder="male or female" >
     <br/><br/>
-    <label style="font-size: 30px;">Address Line 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="address1" type="text-area" placeholder="address line 1" style="height: 75px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Address Line 1 </label>
+    <input name="address1" type="text-area" placeholder="address line 1" >
     <br/><br/>
-    <label style="font-size: 30px;">Address Line 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="address2" type="text-area" placeholder="address line 2" style="height: 75px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Address Line 2 </label>
+    <input name="address2" type="text-area" placeholder="address line 2">
     <br/><br/>
-    <label style="font-size: 30px;">City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="city" type="text" placeholder="City" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">City </label>
+    <input name="city" type="text" placeholder="City" >
     <br/><br/>
-    <label style="font-size: 30px;">State &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="state" type="text" placeholder="State" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">State </label>
+    <input name="state" type="text" placeholder="State" >
     <br/><br/>
-    <label style="font-size: 30px;">Zip Code &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="zip" type="number" placeholder="zip code" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Zip Code </label>
+    <input name="zip" type="number" placeholder="zip code" >
     <br/><br/>
-    <label style="font-size: 30px;">Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input name="country" type="text" placeholder="country" style="height: 45px;width: 200px; border-radius: 30px;">
+    <label style="font-size: 30px;">Country </label>
+    <input name="country" type="text" placeholder="country">
     <br/><br/>
-    <button type="submit" style="height: 45px;width: 200px; border-radius: 30px; background-color: black;color: whitesmoke;">SUBMIT</button>
+    <button type="submit" >SUBMIT</button>
   </form>
+</div>
   
 </body>
 </html>
